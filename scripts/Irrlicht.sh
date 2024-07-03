@@ -20,6 +20,7 @@
      mkdir -p libpng
      cd libpng
      mkdir configure 
+	 cd ..
      pushd libpng
      # Изменяем путь к файлу configure
      ./configure --host=$CROSS_PREFIX 
