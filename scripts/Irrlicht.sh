@@ -8,7 +8,6 @@ download () {
 		git clone https://github.com/minetest/irrlicht irrlicht
 		cd irrlicht
 		git checkout 1.9.0mt10
-		cd ..
 		pushd irrlicht
 	fi
 	get_tar_archive libpng "https://download.sourceforge.net/libpng/libpng-${png_ver}.tar.gz"
