@@ -6,6 +6,7 @@ jpeg_ver=3.0.0
 download () {
 	if [ ! -d irrlicht/.git ]; then
 		git clone https://github.com/minetest/irrlicht/releases/tag/1.9.0mt10 irrlicht
+		git checkout 1.9.0mt10
 		pushd irrlicht
 	fi
 	get_tar_archive libpng "https://download.sourceforge.net/libpng/libpng-${png_ver}.tar.gz"
