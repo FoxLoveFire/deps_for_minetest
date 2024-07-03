@@ -19,6 +19,7 @@ build () {
 	# Build libjpg and libpng first because Irrlicht needs them
 	mkdir -p libpng
 	pushd libpng
+	mkdir libpng/configure
 	$srcdir/libpng/configure --host=$CROSS_PREFIX
 	make && make DESTDIR=$PWD install
 	popd
